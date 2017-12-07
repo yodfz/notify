@@ -97,7 +97,7 @@ exports.default = function () {
                 $eventList[$name] = [];
             }
             var $fnName = (Math.random() + '').substr(2);
-            $eventList[$name].puh({ key: $fnName, fn: $fn });
+            $eventList[$name].push({ key: $fnName, fn: $fn });
             return $fnName;
         },
 
